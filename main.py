@@ -12,5 +12,5 @@ root_id = '720575940626979621'
 root_info = client.chunkedgraph.get_root_id(root_id)
 print("Root info:", root_info)
 
-print(client.chunkedgraph.get_leaves(root_id,stop_layer=2))
+print(client.chunkedgraph.get_leaves(root_id,stop_layer=1))
 

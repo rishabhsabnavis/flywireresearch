@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: fafbseg
+Version: 3.1.3
+Summary: Tools to work with the FlyWire and Google segmentations of the FAFB EM dataset
+Home-page: https://fafbseg-py.readthedocs.io
+Author: Philipp Schlegel
+Author-email: pms70@cam.ac.uk
+License: GNU GPL V3
+Project-URL: Documentation, https://fafbseg-py.readthedocs.io
+Project-URL: Source, https://github.com/navis-org/fafbseg-py
+Project-URL: Changelog, https://github.com/navis-org/fafbseg-py/releases
+Keywords: FAFB neuron segmentation FlyWire Google synapses connectome fly brain navis cave
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: caveclient>=5.4.2
+Requires-Dist: cloud-volume>=8.20
+Requires-Dist: diskcache
+Requires-Dist: fastremap
+Requires-Dist: inquirer>=2.6
+Requires-Dist: ipython
+Requires-Dist: navis<2.0,>=1.8.0
+Requires-Dist: numpy
+Requires-Dist: pandas>=1.1.0
+Requires-Dist: pyarrow>=3.0.0
+Requires-Dist: pyperclip
+Requires-Dist: python-catmaid>=2.0.2
+Requires-Dist: requests
+Requires-Dist: requests-futures
+Requires-Dist: skeletor>=1.0.0
+Requires-Dist: trimesh
+Requires-Dist: tqdm
+Requires-Dist: fuzzywuzzy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+[![Documentation Status](https://readthedocs.org/projects/fafbseg-py/badge/?version=latest)](https://fafbseg-py.readthedocs.io/en/latest/?badge=latest) [![Tests](https://github.com/navis-org/fafbseg-py/actions/workflows/test-package.yml/badge.svg)](https://github.com/navis-org/fafbseg-py/actions/workflows/test-package.yml) [![DOI](https://zenodo.org/badge/197735091.svg)](https://zenodo.org/badge/latestdoi/197735091)
+
+<img src="https://github.com/navis-org/fafbseg-py/blob/master/docs/_static/logo2.png?raw=true" height="60">
+
+Tools to work with the [FlyWire](https://flywire.ai/) and [Google](https://fafb-ffn1.storage.googleapis.com/landing.html) segmentations of the FAFB EM dataset. Fully interoperable with [navis](https://github.com/navis-org/navis).
+
+## Features
+Here are just some of the things you can do with ``fafbseg``:
+
+* map locations or supervoxels to segmentation IDs
+* load neuron meshes and skeletons
+* generate high quality neuron meshes and skeletons from scratch
+* query connectivity and annotations
+* parse and generate FlyWire neuroglancer URLs
+* transform neurons from FAFB/FlyWire space to other brains spaces (e.g. hemibrain)
+
+## Documentation
+FAFBseg is on [readthedocs](https://fafbseg-py.readthedocs.io/en/latest/).
+
+## Quickstart
+Install latest stable version
+
+```bash
+pip3 install fafbseg -U
+```
+
+Install from Github
+```bash
+pip3 install git+https://github.com/flyconnectome/fafbseg-py.git
+```
+
+## How to cite
+If you use `fafbseg` for your publication, please cite the two FlyWire papers:
+
+1. "_Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila_" Schlegel _et al._, bioRxiv (2023); doi: https://doi.org/10.1101/2023.06.27.546055
+2. "_Neuronal wiring diagram of an adult brain_" Dorkenwald _et al._, bioRxiv (2023); doi: https://doi.org/10.1101/2023.06.27.546656
+
+Depending on what data you used (e.g. neurotransmitter predictions) you might need to cite additional publications. Please see the [Citation Guidelines](https://codex.flywire.ai/about_flywire) on Codex.

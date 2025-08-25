@@ -40,7 +40,7 @@ async def mesh_neuron(root_id: str):
 @app.get("/neuron_info/{root_id}")
 async def neuron_info(root_id: str):
     try:
-        neuron_info = fetch_neuron(root_id, client)
+        neuron_info = fetch_neuron(root_id)  # No need to pass client
         return neuron_info
     except Exception as e:
         return {"error": str(e), "root_id": root_id}

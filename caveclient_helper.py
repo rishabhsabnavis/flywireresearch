@@ -7,6 +7,7 @@ from caveclient import CAVEclient
 def connect_to_cave():
     client = CAVEclient("flywire_fafb_public")
     print("Client setup successfully")
+    return client
 
 def token_initialize():
     client = CAVEclient(server_address = 'https://global.daf-apis.com')

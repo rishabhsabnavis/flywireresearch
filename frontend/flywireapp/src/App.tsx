@@ -48,21 +48,6 @@ function App() {
       setLoading(false)
     } 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   return (
     <>  
       <h1>Flywire App</h1>
@@ -74,7 +59,7 @@ function App() {
 
     Root ID: <Input />
 
-    <Button>Submit</Button>
+    <Button onClick = {handleSubmit}>{loading ? 'Loading....' : 'Submit'}</Button>
     </>
   )
 }

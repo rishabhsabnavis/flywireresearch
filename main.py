@@ -6,6 +6,7 @@ from fastapi import FastAPI
 import uvicorn
 import numpy as np
 from neuron_helper import fetch_neuron
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 client = connect_to_cave()
 
@@ -49,7 +50,13 @@ async def neuron_info(root_id: str):
 
 
 
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 

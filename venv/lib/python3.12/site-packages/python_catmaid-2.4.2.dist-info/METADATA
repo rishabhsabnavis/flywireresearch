@@ -1,0 +1,116 @@
+Metadata-Version: 2.2
+Name: python-catmaid
+Version: 2.4.2
+Summary: Python interface to CATMAID servers
+Home-page: https://github.com/navis-org/pymaid
+Author: Philipp Schlegel
+Author-email: pms70@cam.ac.uk
+License: GNU GPL V3
+Project-URL: Documentation, http://pymaid.readthedocs.io
+Project-URL: Source, https://github.com/navis-org/pymaid
+Project-URL: Changelog, https://pymaid.readthedocs.io/en/latest/source/whats_new.html
+Keywords: CATMAID interface neuron navis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: navis>=1.0.0
+Requires-Dist: numpy>=1.16.3
+Requires-Dist: networkx>=2.4
+Requires-Dist: pandas>=1.0
+Requires-Dist: requests-futures>=0.9.9
+Requires-Dist: requests>=2.21.0
+Requires-Dist: setuptools>=41.0.1
+Requires-Dist: scipy>=1.3.0
+Requires-Dist: six>=1.11.0
+Requires-Dist: tqdm>=4.50.0
+Requires-Dist: psutil>=5.4.3
+Provides-Extra: extras
+Requires-Dist: ujson~=1.35; extra == "extras"
+Provides-Extra: stack
+Requires-Dist: zarr; extra == "stack"
+Requires-Dist: fsspec[http]; extra == "stack"
+Requires-Dist: xarray[parallel]; extra == "stack"
+Requires-Dist: imageio; extra == "stack"
+Provides-Extra: all
+Requires-Dist: fsspec[http]; extra == "all"
+Requires-Dist: ujson~=1.35; extra == "all"
+Requires-Dist: xarray[parallel]; extra == "all"
+Requires-Dist: zarr; extra == "all"
+Requires-Dist: imageio; extra == "all"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+[![Documentation Status](https://readthedocs.org/projects/pymaid/badge/?version=latest)](http://pymaid.readthedocs.io/en/latest/?badge=latest) [![Tests](https://github.com/navis-org/pymaid/actions/workflows/run-tests.yml/badge.svg)](https://github.com/navis-org/pymaid/actions/workflows/run-tests.yml) [![Coverage Status](https://coveralls.io/repos/github/navis-org/pymaid/badge.svg?branch=master)](https://coveralls.io/github/navis-org/pymaid?branch=master) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/navis-org/pymaid/master?urlpath=tree) [![DOI](https://zenodo.org/badge/78551448.svg)](https://zenodo.org/badge/latestdoi/78551448)
+
+<img src="https://github.com/navis-org/pymaid/raw/master/docs/_static/favicon.png" height="30"> pymaid
+======================================================================================================
+Python-Catmaid - or "pymaid" - is a [Python](http://www.python.org) 3 library to
+interface with [CATMAID](https://github.com/catmaid/CATMAID "CATMAID Repo")
+servers.
+
+Tested with CATMAID release version 2020.02.15 - if you are working with older
+versions you may run into issues due to API changes.
+
+## Features
+* pull and push data from/to a CATMAID server
+* visualize and analyse neuron morphology via [navis](https://navis.readthedocs.io)
+* tools to analyse user stats (e.g. time-invested, project history)
+* clustering methods (e.g. by connectivity or synapse placement)
+
+## Documentation
+Pymaid is on [ReadTheDocs](http://pymaid.readthedocs.io/ "pymaid ReadTheDocs").
+
+## Getting started
+See the [documentation](http://pymaid.readthedocs.io/ "PyMaid ReadTheDocs") for
+detailed installation instructions, tutorials and examples. For the impatient:
+
+```bash
+pip3 install python-catmaid
+```
+
+*Important*: there is a `pymaid` package on PyPI which has _nothing_ to do with
+this pymaid!
+
+To install the bleeding edge from Github:
+
+```bash
+pip3 install git+https://github.com/navis-org/pymaid@master
+```
+
+Alternatively click on the *launch binder* badge above to try out pymaid hosted by [mybinder](https://mybinder.org)!
+
+![pymaid example](https://user-images.githubusercontent.com/7161148/41200671-4e4320ec-6ca1-11e8-90a2-2feda2d9372d.gif)
+
+## License:
+This code is under GNU GPL V3
+
+## References:
+Pymaid implements/provides an interfaces with algorithms described in:
+
+1. **Comparison of neurons based on connectivity**: Science. 2012 Jul 27;337(6093):437-44. doi: 10.1126/science.1221762.
+*The connectome of a decision-making neural network.*
+Jarrell TA, Wang Y, Bloniarz AE, Brittin CA, Xu M, Thomson JN, Albertson DG, Hall DH, Emmons SW.
+[link](http://science.sciencemag.org/content/337/6093/437.long)
+2. **Comparison of neurons based on synapse distribution**: eLife. doi: 10.7554/eLife.16799
+*Synaptic transmission parallels neuromodulation in a central food-intake circuit.*
+Schlegel P, Texada MJ, Miroschnikow A, Schoofs A, Hueckesfeld S, Peters M, ... Pankratz MJ.
+[link](https://elifesciences.org/content/5/e16799)

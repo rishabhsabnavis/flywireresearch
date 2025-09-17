@@ -87,7 +87,13 @@ async def neuron_partners(cell_type: str):
 
 
 
-
+@app.get("/get_neuron_type/{root_id}")
+async def get_neuron_type(root_id: str):
+    try:
+        neuron_info = flywire.search_community_annotations(root_id)
+        return neuron_info
+    except Exception as e:
+        return {"error": str(e), "root_id": root_id}
 
 @app.get("/neuron_info/{root_id}")
 async def neuron_info(root_id: str):

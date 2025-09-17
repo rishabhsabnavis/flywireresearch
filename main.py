@@ -75,7 +75,7 @@ async def neuron_partners(cell_type: str):
     upstream = conn_df[conn_df["post"] == root_id]["pre"].unique().tolist()
     downstream = conn_df[conn_df["pre"] == root_id]["post"].unique().tolist()
     
-    # Convert numpy types to Python types for JSON serialization
+    
     upstream = [int(x) for x in upstream]
     downstream = [int(x) for x in downstream]
     

@@ -1,8 +1,7 @@
 from fafbseg import flywire
 import navis
 import numpy as np
-
-
+from fafbseg.flywire import NeuronCriteria as NC
 def fetch_neuron(root_id, client=None):
     """
     Fetch neuron information using the FlyWire API.
@@ -49,3 +48,14 @@ def fetch_neuron(root_id, client=None):
             'timestamp': None,
             'error': str(e)
         }]
+
+
+
+def get_neuron_by_type(neuron_type: str):
+     try:
+        neuron_info = flywire.search_annotations(NC.type(neuron_type))
+        return neuron_info
+     except Exception as e:
+        return {"error": str(e), "neuron_type": neuron_type}
+
+

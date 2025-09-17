@@ -5,8 +5,9 @@ from caveclient_helper import connect_to_cave, token_setup
 from fastapi import FastAPI
 import uvicorn
 import numpy as np
-from neuron_helper import fetch_neuron
+from neuron_helper import fetch_neuron, get_neuron_by_type
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import HTTPException
 app = FastAPI()
 client = connect_to_cave()
 
@@ -35,6 +36,56 @@ async def mesh_neuron(root_id: str):
         return mesh_data
     except Exception as e:
         return {"error": str(e), "root_id": root_id}
+
+@app.get("/get_neuron_by_type_endpoint/{neuron_type}")
+async def get_neuron_by_type_endpoint(neuron_type: str):
+    try:
+        neuron_info = get_neuron_by_type(neuron_type)
+        return neuron_info
+    except Exception as e:
+        return {"error": str(e), "neuron_type": neuron_type}
+
+
+#@app.get("/get_annotations_by_type/{neuron_type}")
+#async def get_annotations_by_type(neuron_type: str): 
+ 
+
+
+
+@app.get("/neuron_partners/{cell_type}")
+async def neuron_partners(cell_type: str):
+    # 1. Find neuron(s) matching the cell type
+
+
+    neurons = flywire.search_annotations(cell_type, exact = True)
+
+    if neurons.empty:
+        raise HTTPException(status_code=404, detail="Cell type not found")
+    
+
+
+    root_id = neurons.iloc[0]['root_id']  # Choose the first match, or loop for all
+
+    # 2. Get connectivity
+    conn_df = flywire.synapses.get_connectivity(root_id)
+    if conn_df.empty:
+        return {"upstream": [], "downstream": []}
+
+    # 3. Extract partners
+    upstream = conn_df[conn_df["post"] == root_id]["pre"].unique().tolist()
+    downstream = conn_df[conn_df["pre"] == root_id]["post"].unique().tolist()
+    
+    # Convert numpy types to Python types for JSON serialization
+    upstream = [int(x) for x in upstream]
+    downstream = [int(x) for x in downstream]
+    
+    return {
+        "root_id": int(root_id),
+        "upstream_partners": upstream,
+        "downstream_partners": downstream
+    }
+
+
 
 
 

@@ -8,6 +8,10 @@ import numpy as np
 from neuron_helper import fetch_neuron, get_neuron_by_type
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import HTTPException
+from neurons_csv import get_comprehensive_partners_csv
+from fastapi.responses import FileResponse
+
+
 app = FastAPI()
 client = connect_to_cave()
 
@@ -95,6 +99,14 @@ async def get_neuron_type(root_id: str):
     except Exception as e:
         return {"error": str(e), "root_id": root_id}
 
+#@app.get("/get_upstream_neurons/{root_id}")
+#async def get_upstream_neurons(root_id: str):
+    #try:
+       # upstream_neurons = (root_id)
+        #return upstream_neurons
+    #except Exception as e:
+        #return {"error": str(e), "root_id": root_id}
+
 @app.get("/neuron_info/{root_id}")
 async def neuron_info(root_id: str):
     try:
@@ -103,7 +115,16 @@ async def neuron_info(root_id: str):
     except Exception as e:
         return {"error": str(e), "root_id": root_id}
 
+
+
+@app.get(f"/generate_csv/{root_id}")
+async def generate_csv(root_id: str, direction: str = "upstream"):
+    output_file = get_comprehensive_partners_csv(root_id, stream=direction)
+    return FileResponse(output_file, filename=output_file)
+
+
 #Cave Setup and Connection
+
 
 
 

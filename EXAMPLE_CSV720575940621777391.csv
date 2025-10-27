@@ -1,0 +1,98 @@
+root_id,label,name,nt_type,flow,super_class,class,sub_class,cell_type,hemilineage,nerve,connectivity_tag,side,input_synapses,output_synapses,Syn
+720575940607155890,['MBON26; B`2d'; 'MBON26; B`2d; FBbt_00049846'; 'MBON26; MBONs from Janelia`s hemibrain dataset are described in this paper https://elifesciences.org/articles/62576'],CRE.LAL.1,ACH,intrinsic,central,MBON,,['MBON26'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,7935,6803,106
+720575940653480438,[],CRE.FLA.1,GABA,intrinsic,central,,,['CRE100'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,2710,3729,105
+720575940620317564,[],CRE.FB.27,GLUT,intrinsic,central,CX,tangential,['4D1'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,490,621,75
+720575940620464321,['MBON04; B`2mp_bilateral'; 'MBON04; B`2mp_bilateral; FBbt_00111014'],CRE.1,GLUT,intrinsic,central,MBON,,['MBON04'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,10024,4891,65
+720575940626654041,[],LAL.CRE.9,,intrinsic,central,,,['LAL185'; 'pIP11'],DM5_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1956,1001,64
+720575940621766938,['DM5_dorsal'],LAL.10,ACH,intrinsic,central,,,['LAL159'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,5138,3190,53
+720575940637098352,['LHCENT3#1'],LH.1,GABA,intrinsic,central,LHCENT,,['LHCENT3'],primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,7324,8879,47
+720575940611344078,['MBON20; y1y2'; 'MBON20; y1y2; FBbt_00111013'; 'ALv1'],CRE.SLP.1,GABA,intrinsic,central,MBON,,['MBON20'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1683,6261,45
+720575940644849431,[],SMP.428,GLUT,intrinsic,central,,,['SMP075a'; 'SMP075'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,730,814,29
+720575940622719770,[],LAL.PLP.1,GABA,intrinsic,central,,,['mALD1'],CREa1_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,2333,9370,28
+720575940649591673,[],CRE.FLA.2,GABA,intrinsic,central,,,['CRE100'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,2492,3627,27
+720575940629981440,['MBON26; B`2d'; 'MBON26; B`2d; FBbt_00049846'; 'MBON26; MBONs from Janelia`s hemibrain dataset are described in this paper https://elifesciences.org/articles/62576'],LAL.AL.1,ACH,intrinsic,central,MBON,,['MBON26'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,6997,6333,26
+720575940617691170,['PPL101; y1ped; FBbt_00100243'; 'PPL101; y1ped'],SMP.MB_PED.2,DA,intrinsic,central,DAN,,['PPL101'],putative_primary,,['rich_club'; 'integrator'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,6079,1741,21
+720575940636489140,['LHCENT3#1'],LH.2,GABA,intrinsic,central,LHCENT,,['LHCENT3'],primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,7396,8266,21
+720575940618249797,['MBON27; y5d'; 'MBON27; y5d; FBbt_00049847'; 'DM5_dorsal'; 'MBON27; MBONs from Janelia`s hemibrain dataset are described in this paper https://elifesciences.org/articles/62576'],CRE.LAL.2,ACH,intrinsic,central,MBON,,['MBON27'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3617,1876,20
+720575940619637056,[],LAL.PLP.2,GABA,intrinsic,central,,,['mALD1'],CREa1_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1949,8897,20
+720575940623817223,[],VES.GNG.14,GLUT,intrinsic,central,,,['VES047'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3168,1896,20
+720575940627653502,[],CRE.FB.35,GLUT,intrinsic,central,CX,tangential,['4D1'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,150,448,20
+720575940629592143,[],LAL.SMP.9,ACH,intrinsic,central,,,['LAL185'; 'pIP11'],DM5_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,966,1167,20
+720575940636343147,['LHCENT11#1'],SMP.VES.2,ACH,intrinsic,central,LHCENT,,['LHCENT11'],primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1482,4051,20
+720575940617071372,['new_clone_2'],SMP.2307,GLUT,intrinsic,central,,,['CRE050'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,2465,1811,18
+720575940618295376,[],FB.169,GLUT,intrinsic,central,CX,tangential,['4D3'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,519,1361,18
+720575940619814997,[],SMP.318,GLUT,intrinsic,central,,,['SMP075b'; 'SMP075'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,930,1046,18
+720575940614428319,[],LAL.91,ACH,intrinsic,central,,,['LAL169'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3203,2252,17
+720575940620715224,['not a neuron'; 'MBON21; y4y5'; 'MBON34; y2; FBbt_00049854'; 'MBON21; y4y5; FBbt_00111046'],MB_ML.CRE.11,ACH,intrinsic,central,MBON,,['MBON21'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,1399,1709,17
+720575940629112579,['LALv1'],NO.FB.1,,intrinsic,central,CX,tangential,['4I5'; 'CB.FB3'; 'FB4C'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1554,1624,17
+720575940629428695,[],LAL.GNG.28,GLUT,intrinsic,central,,,['VES047'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,2682,1586,17
+720575940629760567,[],CRE.SLP.8,ACH,intrinsic,central,,,['CRE080c'; 'CRE080'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,311,372,17
+720575940617532089,['CRE050'; 'AOTUv4_ventral'],CRE.SMP.8,GLUT,intrinsic,central,,,['CRE050'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3065,1408,16
+720575940623120222,[],LAL.CRE.5,GABA,intrinsic,central,,,['LAL100'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1836,2449,16
+720575940631449411,[],FB.9,GABA,intrinsic,central,CX,tangential,['4I4'; 'CB.FB3'; 'FB4A'; 'FB4D'; 'FB4E'; 'FB4F'; 'FB4G'; 'FB4H'; 'FB4I'; 'FB4J'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'; 'highly_reciprocal_neuron'; 'nsrn'],right,1999,3268,16
+720575940611738035,[],SMP.9,GABA,intrinsic,central,,,['SMP049'; 'SMP076'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,2240,4429,15
+720575940620903518,[],CRE.IB.14,GLUT,intrinsic,central,,,['CREa1A_T01'; 'ATL005'; 'ATL007'],CREa1_dorsal,,['rich_club'; 'feedforward_loop_participant'; '3_cycle_participant'],right,640,449,15
+720575940625886666,['pMP6b'],CRE.SIP.16,ACH,intrinsic,central,,,['CRE081'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,385,388,15
+720575940628137222,[],CRE.FB.33,GLUT,intrinsic,central,CX,tangential,['CB.FB5D4'; 'FB4O'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,202,364,14
+720575940606198473,[],CRE.FB.24,GLUT,intrinsic,central,CX,tangential,['4D1'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,417,766,13
+720575940612488142,[],SMP.27,ACH,intrinsic,central,,,['SMP053'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3053,2133,13
+720575940625990500,[],SMP.FLA.1,ACH,intrinsic,central,,,['SMP586'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1400,2797,13
+720575940610051733,[],CRE.FB.4,GLUT,intrinsic,central,CX,tangential,['4D0'; 'CB.FB3'; 'FB4O'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,579,952,12
+720575940633117580,[],SLP.SMP.3,GABA,intrinsic,central,,,['SMP049'; 'SMP076'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,2009,4269,12
+720575940610181496,[],CRE.MB_ML.20,DA,intrinsic,central,DAN,,['PAM12'],CREa2_medial,,['reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,49,56,11
+720575940614506663,[],SLP.6,GABA,intrinsic,central,,,['SMP049'; 'SMP076'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,1949,3919,10
+720575940629897260,[],CRE.7,GLUT,intrinsic,central,,,['CRE075'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,2959,1482,10
+720575940643863496,['MBON20; y1y2'; 'MBON20; y1y2; FBbt_00111013'],CRE.PLP.1,GABA,intrinsic,central,MBON,,['MBON20'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,1882,5786,10
+720575940612953714,[],LAL.180,ACH,intrinsic,central,,,['LAL196'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1216,634,9
+720575940615833055,[],FB.26,GLUT,intrinsic,central,CX,tangential,['4I5'; 'CB.FB3'; 'FB4C'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,3040,3463,9
+720575940625680784,[],CRE.FB.34,GLUT,intrinsic,central,CX,tangential,['4D1'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,253,549,9
+720575940629332730,['pMP6b'],CRE.SCL.6,ACH,intrinsic,central,,,['CRE080c'; 'CRE080'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,469,475,9
+720575940614677810,[],CRE.MB_ML.18,DA,intrinsic,central,DAN,,['PAM12'],CREa2_medial,,['feedforward_loop_participant'; '3_cycle_participant'],right,82,39,8
+720575940615750562,[],CRE.42,DA,intrinsic,central,DAN,,['PPL108'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1359,694,8
+720575940621569006,[],CRE.ATL.6,GLUT,intrinsic,central,,,['ATL033'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1103,999,8
+720575940633145903,['ExR6'; 'LALv1'],EB.4,,intrinsic,central,CX,,['ExR6'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'; 'highly_reciprocal_neuron'],right,7460,7789,8
+720575940633338449,[],ATL.IB.3,GLUT,intrinsic,central,,,['ATL035'; 'ATL036'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,404,409,8
+720575940633541857,[],CRE.MB_ML.12,DA,intrinsic,central,DAN,,['PAM13'],CREa2_medial,,['reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,135,47,8
+720575940621312773,['DM5_dorsal'],LAL.84,ACH,intrinsic,central,,,['LAL159'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,1294,2620,7
+720575940624169255,[],SMP.916,ACH,intrinsic,central,,,['SMP031'],LHl2_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,527,328,7
+720575940625369096,['AOTUv1_medial'],SMP.336,GLUT,intrinsic,central,,,['SMP075a'; 'SMP075'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,789,1083,7
+720575940625663269,[],LAL.SMP.6,ACH,intrinsic,central,,,['LAL154'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1335,1156,7
+720575940628093309,[],CRE.IB.10,ACH,intrinsic,central,,,['IB049'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,874,631,7
+720575940630202267,[],CRE.19,GABA,intrinsic,central,,,['LAL100'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,930,1985,7
+720575940634057884,['DM5_dorsal'],LAL.SMP.8,ACH,intrinsic,central,,,['LAL154'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,761,1047,7
+720575940638886307,['DM6'],SMP.290,ACH,intrinsic,central,,,['CL326'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,846,979,7
+720575940643309197,['MBON01; y5B`2a'; 'MBON01; y5B`2a; FBbt_00100234'; 'SMPad3'],MB_ML.SMP.2,GLUT,intrinsic,central,MBON,,['MBON01'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,3373,4387,7
+720575940607249365,['pMP6b'],SMP.SLP.14,ACH,intrinsic,central,,,['CRE080a'; 'CRE080'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,329,372,6
+720575940608663253,[],CRE.SLP.5,ACH,intrinsic,central,,,['CRE082'; 'pMP6'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,306,532,6
+720575940614587615,[],VES.IB.6,ACH,intrinsic,central,,,['IB064'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,697,1373,6
+720575940615921803,[],CRE.FB.36,SER,intrinsic,central,CX,tangential,['4I3'; 'CB.FB3'; 'FB4A'; 'FB4D'; 'FB4E'; 'FB4F'; 'FB4G'; 'FB4H'; 'FB4I'; 'FB4J'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,328,691,6
+720575940616117794,[],SMP.1789,ACH,intrinsic,central,,,['CRE065'],CREl1,,['feedforward_loop_participant'; '3_cycle_participant'],right,30,209,6
+720575940617955099,[],SMP.VES.1,ACH,intrinsic,central,,,['SMP471'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,3019,1772,6
+720575940624176107,[],CRE.ATL.7,GLUT,intrinsic,central,,,['ATL034'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,882,964,6
+720575940625800852,[],CRE.SCL.4,ACH,intrinsic,central,,,['CRE080a'; 'CRE080'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,351,480,6
+720575940635022703,['pMP6c; put_PDM13a'],CRE.SLP.6,ACH,intrinsic,central,,,['CRE080c'; 'CRE080'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,530,628,6
+720575940636134366,['ER1'],LAL.487,,intrinsic,central,CX,ring_neuron,['ER1'],EBa1,,['feedforward_loop_participant'],right,56,87,6
+720575940640770957,[],CRE.MB_ML.40,DA,intrinsic,central,DAN,,['PAM12'],CREa2_medial,,['feedforward_loop_participant'; '3_cycle_participant'],right,48,27,6
+720575940643234760,[],CRE.IB.16,GLUT,intrinsic,central,,,['ATL035'; 'ATL036'],putative_primary,,['rich_club'; 'feedforward_loop_participant'; '3_cycle_participant'],right,362,236,6
+720575940645829764,[],CRE.IB.12,GLUT,intrinsic,central,,,['ATL035'; 'ATL036'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,505,656,6
+720575940617651829,['CRE001'],SMP.1198,ACH,intrinsic,central,,,['CRE001'],LHl2_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,321,367,5
+720575940618775943,[],SMP.MB_ML.51,DA,intrinsic,central,DAN,,['PAM12'],CREa1_dorsal,,['reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,51,60,5
+720575940619820368,['pIP11; put_PVM06j'],LAL.CRE.13,ACH,intrinsic,central,,,['LAL185'; 'pIP11'],DM5_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,810,882,5
+720575940620324079,[],SMP.30,GLUT,intrinsic,central,,,['SMP115'],SMPad3,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,3127,1603,5
+720575940620716897,[],SMP.371,DA,intrinsic,central,,,['PAL02'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1285,211,5
+720575940622389640,['VLPp2'],LAL.194,ACH,intrinsic,central,,,['LAL196'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,922,665,5
+720575940623613149,[],CRE.ATL.2,ACH,intrinsic,central,,,['ATL037'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1725,1858,5
+720575940625893507,[],CRE.64,ACH,intrinsic,central,,,['ATL029'],DM1_antero_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,675,420,5
+720575940625929971,['ExR4; ExR4'; 'LALv1'],GA.EB.4,ACH,intrinsic,central,CX,,['ExR4'],LALv1_dorsal,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1593,800,5
+720575940626316606,[],FB.194,GLUT,intrinsic,central,CX,tangential,['4D3'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,511,1351,5
+720575940626743495,['CRE065'; 'new_clone_2'],CRE.280,ACH,intrinsic,central,,,['CRE065'],CREl1,,['feedforward_loop_participant'],left,33,107,5
+720575940627357969,[],FB.191,GLUT,intrinsic,central,CX,tangential,['4D0'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,621,1439,5
+720575940631154396,[],LH.CRE.7,ACH,intrinsic,central,,,['LHPV7c1'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,1254,1367,5
+720575940632518348,[],SMP.1420,GLUT,intrinsic,central,,,['CB1062'],SMPad3,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,171,151,5
+720575940632862177,[],FB.228,GLUT,intrinsic,central,CX,tangential,['4D3'; 'CB.FB3'; 'FB4P'; 'FB4Q'; 'FB4R'],AOTUv4_ventral,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,519,1312,5
+720575940634640023,['CREa2_ventral'],CRE.MB_ML.41,DA,intrinsic,central,DAN,,['PAM12'],CREa2_medial,,['feedforward_loop_participant'; '3_cycle_participant'],right,33,20,5
+720575940635342236,[],ATL.IB.2,GLUT,intrinsic,central,,,['ATL035'; 'ATL036'],putative_primary,,['rich_club'; 'feedforward_loop_participant'; '3_cycle_participant'],right,510,303,5
+720575940636318350,[],CRE.258,ACH,intrinsic,central,,,['CB1357'],DL1_dorsal,,['reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,154,183,5
+720575940642272456,[],SMP.1412,ACH,intrinsic,central,,,['SMP194'],DL1_dorsal,,['reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],right,116,203,5
+720575940642652104,[],SMP.CRE.144,ACH,intrinsic,central,,,['CRE065'],CREl1,,['feedforward_loop_participant'],left,67,146,5
+720575940644639342,[],GNG.121,ACH,intrinsic,central,,,['CB0039'],putative_primary,,['rich_club'; 'reciprocal'; 'feedforward_loop_participant'; '3_cycle_participant'],left,1839,2082,5

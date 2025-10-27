@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { Brain, Search, Database, Activity, AlertCircle, Loader2 } from 'lucide-react'
-
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import './index.css'
 import './App.css'
 
@@ -19,6 +19,9 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [neuronInfo, setNeuronInfo] = useState(null)
+  const [csvDirection, setCsvDirection] = useState('upstream')
+  const [csvLoading, setCsvLoading] = useState(false)
+  const [csvError, setCsvError] = useState('')
   
   const API_BASE_URL = 'http://localhost:8002'
 
@@ -47,6 +50,37 @@ function App() {
     finally {
       setLoading(false)
     } 
+  }
+  const handleCsvGeneration = async () => {
+    if (!rootId.trim()) {
+      setCsvError('Root ID is required')
+      return
+    }
+
+    setCsvLoading(true)
+    setCsvError('')
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/generate_csv/${rootId}?direction=${csvDirection}`)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `${csvDirection}_neurons_comprehensive_${rootId}.csv`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      window.URL.revokeObjectURL(url)
+    } catch (err) {
+      setCsvError(err instanceof Error ? err.message : 'An error occurred')
+    } finally {
+      setCsvLoading(false)
+    }
   }
 
   return (
@@ -152,6 +186,74 @@ function App() {
             </div>
           </div>
 
+          {/*CSV Generation Stuff*/}
+          <div className="bg-slate-800/80 border border-blue-700/30 rounded-2xl shadow-2xl p-8 mb-8 hover-lift animate-fade-in-up max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold text-white mb-2">
+                  CSV Generation
+                </h3>
+                <p className="text-blue-200">Download a comprehensive CSV file with all of the partner neurons of a root neuron. Dynamically changes with the root neuron selected</p>
+              </div>
+            </div>
+            <div className="space-y-4">
+              {/*Direction Selector*/}
+              <div>
+              <label className="block text-sm font-medium text-blue-200 mb-3">
+                  Connection Direction
+              </label>
+              <Select value={csvDirection} onValueChange={setCsvDirection}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select a direction" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="upstream">Upstream</SelectItem>
+                  <SelectItem value="downstream">Downstream</SelectItem>
+                </SelectContent>
+              </Select>
+
+              {/*Generate CSV Button*/}
+
+              <Button 
+                  onClick={handleCsvGeneration}
+                  disabled={csvLoading || !rootId.trim()}
+                  className="w-full h-12 text-lg font-semibold"
+                >
+                  {csvLoading ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      Generating CSV...
+                    </>
+                  ) : (
+                    <>
+                      <Database className="mr-2 h-5 w-5" />
+                      Generate CSV
+                    </>
+                  )}
+                </Button>
+
+              {/*Error Display*/}
+              {csvError && (
+                <div className="bg-red-900/30 border border-red-700/50 rounded-lg p-4">
+                  <div className="flex items-center">
+                    <AlertCircle className="h-5 w-5 text-red-400 mr-2" />
+                    <p className="text-red-200 font-medium">{csvError}</p>
+                  </div>
+                </div>
+              )}
+
+              </div>  
+
+
+
+
+
+            </div>
+
+
+
+
+          </div>
           {/* Results Section */}
           {neuronInfo && (
             <div className="bg-slate-800/80 border border-blue-700/30 rounded-2xl shadow-2xl p-8 animate-fade-in-up w-full">
@@ -176,6 +278,7 @@ function App() {
               </div>
             </div>
           )}
+
 
           {/* Navigation Menu */}
           <div className="mt-12 max-w-4xl mx-auto">
@@ -210,5 +313,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App

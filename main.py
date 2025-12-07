@@ -5,10 +5,10 @@ from caveclient_helper import connect_to_cave, token_setup
 from fastapi import FastAPI
 import uvicorn
 import numpy as np
-from neuron_helper import fetch_neuron, get_neuron_by_type
+#from neuron_helper import fetch_neuron, get_neuron_by_type
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import HTTPException
-from neurons_csv import get_comprehensive_partners_csv
+from neurons_csv import get_comprehensive_partners_csv_caveclient
 from fastapi.responses import FileResponse
 
 
@@ -117,10 +117,15 @@ async def neuron_info(root_id: str):
 
 
 
-@app.get(f"/generate_csv/{root_id}")
+@app.get("/generate_csv/{root_id}")
 async def generate_csv(root_id: str, direction: str = "upstream"):
-    output_file = get_comprehensive_partners_csv(root_id, stream=direction)
-    return FileResponse(output_file, filename=output_file)
+    try:
+        output_file = get_comprehensive_partners_csv_caveclient(root_id, stream=direction)
+        if output_file is None:
+            raise HTTPException(status_code=500, detail="Failed to generate CSV file")
+        return FileResponse(output_file, filename=output_file, media_type="text/csv")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating CSV: {str(e)}")
 
 
 #Cave Setup and Connection
